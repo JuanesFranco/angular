@@ -6,7 +6,7 @@ export const ROUTES: RouteInfo[] = [
     path: '/page', title: 'Page', icon: 'ft-home', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
   },
   {
-    path: '/exercises/calculator', title: 'Calculator', icon: 'ft-command', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+    path: '/exercises/calculator', title: 'Calculator', icon: 'icon-calculator', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
   },
   
   {
@@ -17,6 +17,9 @@ export const ROUTES: RouteInfo[] = [
   },
   {
     path: '/exercises/editor', title: 'Text Editor', icon: 'ft-edit-1', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+  },
+  {
+    path: '/exercises/organigrama', title: 'Organigrama', icon: 'icon-layers', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
   },
   /*
   {

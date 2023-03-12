@@ -4,6 +4,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { DataTablesComponent } from './data-tables/data-tables.component';
 import { EditorComponent } from './editor/editor.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { OrganigramaComponent } from './organigrama/organigrama.component';
 
 
 
@@ -57,6 +58,19 @@ const routes: Routes = [
       },
     ]
   },
+  
+  {
+    path: '',
+    children: [
+      {
+        path: 'organigrama',
+        component: OrganigramaComponent,
+        data: {
+          title: 'Organigrama'
+        }
+      },
+    ]
+  }
   
   
 ];
