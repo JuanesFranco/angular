@@ -30,6 +30,8 @@ const routes: Routes = [
           title: 'Forgot Password'
         }
       },
+      
+      
     ]
   }
 ];

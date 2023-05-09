@@ -5,6 +5,7 @@ import { DataTablesComponent } from './data-tables/data-tables.component';
 import { EditorComponent } from './editor/editor.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { OrganigramaComponent } from './organigrama/organigrama.component';
+import { TableComponent } from './table/table.component';
 
 
 
@@ -29,6 +30,18 @@ const routes: Routes = [
         component: DataTablesComponent,
         data: {
           title: 'Data-Tables'
+        }
+      },
+    ]
+  },
+  {
+    path: '',
+    children: [
+      {
+        path: 'table',
+        component: TableComponent,
+        data: {
+          title: 'Table'
         }
       },
     ]

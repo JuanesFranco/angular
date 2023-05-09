@@ -15,6 +15,7 @@ import { EditorComponent } from './editor/editor.component';
 import { QuillModule } from 'ngx-quill';
 import { OrganigramaComponent } from './organigrama/organigrama.component';
 import {OrganizationChartModule} from 'primeng/organizationchart';
+import { TableComponent } from './table/table.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import {OrganizationChartModule} from 'primeng/organizationchart';
     DataTablesComponent,
     EditorComponent,
     OrganigramaComponent,
+    TableComponent,
   
   ],
   imports: [

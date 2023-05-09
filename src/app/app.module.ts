@@ -1,8 +1,9 @@
 import { NgModule } from "@angular/core";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
-import { BrowserModule } from '@angular/platform-browser';
+
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { DataTablesModule } from "angular-datatables";
 
 
 import { AngularFireModule } from "@angular/fire";
@@ -30,6 +31,7 @@ import { AuthService } from "./shared/auth/auth.service";
 import { AuthGuard } from "./shared/auth/auth-guard.service";
 import { WINDOW_PROVIDERS } from './shared/services/window.service';
 
+
 var firebaseConfig = {
   apiKey: "YOUR_API_KEY", //YOUR_API_KEY
   authDomain: "YOUR_AUTH_DOMAIN", //YOUR_AUTH_DOMAIN
@@ -55,12 +57,15 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [AppComponent, FullLayoutComponent, ContentLayoutComponent],
   imports: [
     BrowserAnimationsModule,
+    
     AppRoutingModule,
     SharedModule,
     HttpClientModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule,
     NgbModule,
+    DataTablesModule,
+    NgxDatatableModule,
     NgxSpinnerModule,
     TranslateModule.forRoot({
       loader: {

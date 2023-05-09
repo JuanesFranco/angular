@@ -17,7 +17,7 @@ export class OrganigramaComponent implements OnInit {
 
   selectedNode: TreeNode;
 
-  constructor() {}
+  constructor(private messageService:MessageService) {}
 
   ngOnInit() {
       this.data = [{
@@ -119,4 +119,8 @@ export class OrganigramaComponent implements OnInit {
     }];
 
   }
+  onNodeSelect(event) {
+    this.messageService.add({severity: 'success', summary: 'Node Selected', detail: event.node.label});
 }
+}
+

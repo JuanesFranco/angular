@@ -1,7 +1,7 @@
 <p-toast [style]="{marginTop: '80px'}"></p-toast>
 
 <h5>Advanced</h5>
-<p>Organization with advanced customization.</p>
+
 <p-organizationChart [value]="data" selectionMode="single" [(selection)]="selectedNode" styleClass="company">
     <ng-template let-node pTemplate="person">
         <div class="node-header">{{node.label}}</div>
